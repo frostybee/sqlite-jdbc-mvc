@@ -1,0 +1,20 @@
+apply plugin: 'java'
+apply plugin: 'jacoco'
+apply plugin: 'application'
+
+
+description = 'Working with JDBC and SQLite DB'
+group = 'org.bee'
+
+mainClassName = 'org.bee.sqlite.DriverMVC'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testImplementation     'junit:junit:4.13'
+    implementation 'org.xerial:sqlite-jdbc:3.32.3.2'
+}
+
+
